@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "TutorialMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Manuel-Cam"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Manuel-Cam/Fabric-Tutorial-1.20.4"
+	},
+	"license": "GPL",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tutorialmod.manuel.com.TutorialMod"
+		],
+		"fabric-datagen": [
+			"tutorialmod.manuel.com.TutorialModDataGenerator"
+		],
+		"client":[
+			"tutorialmod.manuel.com.TutorialModClientClass"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
